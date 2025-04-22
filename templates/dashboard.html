@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSentiment: Movie Review Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>CineSentiment</h1>
+        <p>Determine if a review is Positive or Negative using AI</p>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <form id="review-form">
+                <textarea id="review" name="review" rows="5" required placeholder="Enter your review..."></textarea>
+                <button type="submit">Analyze</button>
+            </form>
+        </div>
+    
+        <section id="result-section" hidden>
+            <h2>Result</h2>
+            <p id="result-text"></p>
+            <p id="result-description"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sentiment AI</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
