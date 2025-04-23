@@ -8,7 +8,7 @@ tfidf_vectorizer = joblib.load('tfidf_vectorizer.joblib')
 
 # Custom threshold
 POSITIVE_THRESHOLD = 0.65
-NEGATIVE_THRESHOLD = 0.58
+NEGATIVE_THRESHOLD = 0.50
 
 # Initialize Flask app
 app = Flask(__name__)
