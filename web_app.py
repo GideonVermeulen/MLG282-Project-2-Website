@@ -8,8 +8,7 @@ model_lr = joblib.load('logistic_regression_model.pkl')
 tfidf_vectorizer = joblib.load('tfidf_vectorizer.joblib')
 
 # Single custom threshold
-THRESHOLD = 0.6  # Adjust as needed
-
+THRESHOLD = 0.4542
 # Initialize Flask app
 app = Flask(__name__)
 

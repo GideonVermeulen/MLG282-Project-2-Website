@@ -3,6 +3,15 @@ document.getElementById('review-form').addEventListener('submit', async function
     console.log("Form submitted");
 
     const review = document.getElementById('review').value.trim();
+    const wordCount = review.split(/\s+/).filter(Boolean).length;
+    const warning = document.getElementById('word-warning');
+
+    if (wordCount < 10) {
+        warning.style.display = 'inline';
+        return;
+    } else {
+        warning.style.display = 'none';
+    }
     const resultSection = document.getElementById('result-section');
     const resultText = document.getElementById('result-text');
     const resultDescription = document.getElementById('result-description');
