@@ -36,8 +36,6 @@ document.getElementById('review-form').addEventListener('submit', async function
                     resultDescription.textContent = "This review was considered positive because it expresses satisfaction or optimism.";
                 } else if (sentiment.includes("Negative")) {
                     resultDescription.textContent = "This review was marked negative due to signs of dissatisfaction or negative tone.";
-                } else if (sentiment.includes("Neutral")) {
-                    resultDescription.textContent = "This review appears neutral, containing no strong positive or negative expressions.";
                 }
             }
 
