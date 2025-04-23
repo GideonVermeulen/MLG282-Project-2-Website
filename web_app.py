@@ -4,11 +4,11 @@ import numpy as np
 import os
 
 # Load the trained model and vectorizer
-model_lr = joblib.load('logistic_regression_model.pkl')
+model_lr = joblib.load('Improved_logistic_regression_model.pkl')
 tfidf_vectorizer = joblib.load('tfidf_vectorizer.joblib')
 
 # Single custom threshold
-THRESHOLD = 0.4542
+THRESHOLD = 0.5140925728435833
 # Initialize Flask app
 app = Flask(__name__)
 
